@@ -185,8 +185,8 @@ h5 {
 }
 
 h6 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: .75rem;
+  margin-bottom: .1rem;
   color: var(--h6-color);
 }
 
@@ -224,12 +224,22 @@ em {
   color: var(--overlay-description-color);
 }
 
+.caption{
+  padding-top:.6rem;
+}
+
+
+.caption-grey{
+  color:#6e6f71;
+}
+
 
 /* Hyperlink Styles */
 
 a:link {
   color: var(--hyperlink-color);
   text-decoration: none;
+  font-size: .9rem;
 }
 
 a:visited {
@@ -320,7 +330,7 @@ a:active {
 */
 
 .hero {
-  min-height: 80vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
 }
@@ -331,6 +341,10 @@ a:active {
   padding: 1rem;
   flex-direction: row;
   align-items: flex-start;
+  align-items: center;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
 }
 
 .branding-navigation {
@@ -341,7 +355,7 @@ a:active {
 }
 
 .logo {
-  width:6rem;
+  width:5.5rem;
 }
 
 .hero-headline-wrapper {
@@ -364,6 +378,8 @@ a:active {
   flex-direction: column;
   text-align: center;
   border-bottom: .5px solid var(--accent-color);
+  width: 94%;
+  margin: 0 auto;
 
 }
 
@@ -371,7 +387,7 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
 
 
@@ -394,7 +410,7 @@ a:active {
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: .25rem;
+  padding: 1rem;
 }
 
 /* Defining the work page grid */
@@ -490,34 +506,25 @@ a:active {
 */
 
 .global-footer {
-  display: column;
-  min-height: 30vh;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  min-height: 20vh;
   background: var(--background-color-footer);
-  padding: 1rem;
-  border-top: .75px solid var(--accent-color);
-  max-width: 90%;
-  align-items: flex-start;
-}
-
-.footer-item-1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--accent-color);
+  width: 95%;
+  margin: 0 auto;
 }
 
 .footer-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  text-align: right;
 }
 
 .footer-item-3 {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
+  align-self: flex-end;
 }
 
-.footer-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-}
 
 .awards-list {
   margin-bottom: 2rem;
@@ -844,6 +851,14 @@ a.sub-navigation-link:hover {
   h3 {
     font-size: 1.625rem;
   }
+  
+  h6 {
+    font-size: 1rem;
+  }
+
+  a:link {
+    font-size: 1.2rem;
+  }
 
   .logo {
     width: 7rem;
@@ -858,7 +873,7 @@ a.sub-navigation-link:hover {
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
     grid-gap: 1rem;
   }
 
@@ -930,9 +945,15 @@ a.sub-navigation-link:hover {
   }
 
   /* Padding around work grid and project page */
+
+  .caption{
+    padding-top:.85rem;
+  }
+  
   .portfolio,
   .project-wrapper {
-    padding: 0.5rem;
+    width: 95%;
+    margin: 0 auto;
   }
 
   /* Project Page Flex Direction on Large Devices */
