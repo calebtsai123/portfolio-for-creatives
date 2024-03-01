@@ -11,11 +11,10 @@ Add the Google Fonts you want, remove the ones you don't.
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Hepta+Slab|Staatliches&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap");
 
 /*
 
@@ -29,11 +28,11 @@ Imported stylesheets. Remove the ones you do not want to use.
 
 */
 
-@import url('make-something-fly.css');
-@import url('animated-gradient.css');
-@import url('text-stroke.css');
-@import url('stroke-shadow.css');
-@import url('scroll-to-top.css');
+@import url("make-something-fly.css");
+@import url("animated-gradient.css");
+@import url("text-stroke.css");
+@import url("stroke-shadow.css");
+@import url("scroll-to-top.css");
 /*
 
 X-Small devices (portrait phones, less than 576px) 
@@ -52,7 +51,7 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("../assets/temp/up-cursor.png"), auto !important;
+  cursor: url(assets/branding-images/cursor.svg), auto !important;
 }
 
 *,
@@ -76,40 +75,39 @@ html {
 :root {
   --body-typeface: "Inter", sans-serif;
   --heading-typeface: "Space Grotesk", sans-serif;
-  --project-title-typeface: 'Eczar', serif;
-  --background-color: #F3F3E8;
-  --background-color-about: #F3F3E8;
-  --background-color-footer: #F3F3E8;    
+  --project-title-typeface: "Eczar", serif;
+  --background-color: #f3f3e8;
+  --background-color-about: #f3f3e8;
+  --background-color-footer: #f3f3e8;
   --alt-background-color: #000000;
-  --background-color-holding-page: #0D1610;
-  --h1-color: #0D1610;
-  --h2-color: #0D1610;
-  --h3-color: #0D1610;
-  --h4-color: #0D1610;
-  --h5-color: #0D1610;
-  --h6-color: #0D1610;
+  --background-color-holding-page: #0d1610;
+  --h1-color: #0d1610;
+  --h2-color: #0d1610;
+  --h3-color: #0d1610;
+  --h4-color: #0d1610;
+  --h5-color: #0d1610;
+  --h6-color: #0d1610;
   --primary-text-color: #222;
-  --holding-page-title-color: #ebedf0;
-  --accent-color: #0D1610;
-  --overlay-color: ;#0D1610;
-  --overlay-title-color: #F3F3E8;
-  --overlay-description-color: #F3F3E8;
-  --hyperlink-color: #0D1610;
+  --holding-page-title-color: #0d1610;
+  --accent-color: #0d1610;
+  --overlay-color: #f3f3e8;
+  --overlay-title-color: #f3f3e8;
+  --overlay-description-color: #f3f3e8;
+  --hyperlink-color: #0d1610;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
-  --visited-color: #0D1610;
-  --project-title-color: #0D1610;
-  --project-sidebar-background-color: orangered;
-  --project-sidebar-text-color: F3F3E8;
+  --visited-color: #0d1610;
+  --project-title-color: #0d1610;
+  --project-sidebar-background-color: #f3f3e8;
+  --project-sidebar-text-color: #0d1610;
   --heart-color: darkred;
-  --holding-page-footer-color: #F3F3E8;
-  --text-selection-background-color: #0D1610;
+  --holding-page-footer-color: #aaaaa5;
+  --text-selection-background-color: #0d1610;
   --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
   --linear-gradient-color-3: #321575;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
-
 
 body {
   font-family: var(--body-typeface);
@@ -137,8 +135,6 @@ svg {
   /* This is optional. Also try cover or leave out entirely. */
 }
 
-
-
 /* Global & Mobile Typography 
 
 ████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██ 
@@ -150,9 +146,9 @@ svg {
 */
 
 h1 {
-  font-size: 1.25rem;
-  line-height: 1.2;
-  font-weight:700;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 700;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--h1-color);
@@ -168,31 +164,33 @@ h2 {
 h3 {
   font-size: 1.325rem;
   margin-bottom: 1rem;
-  line-height: 1.3;
+  line-height: 1.5;
   color: var(--h3-color);
 }
 
 h4 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  line-height: 1.5;
   color: var(--h4-color);
 }
 
 h5 {
   font-size: 1.1rem;
   margin-bottom: 1rem;
+  line-height: 1.5;
   color: var(--h5-color);
 }
 
 h6 {
-  font-size: .75rem;
-  margin-bottom: .1rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.1rem;
   color: var(--h6-color);
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.3;
+  font-size: 0.9rem;
+  line-height: 1.4;
   margin-bottom: 1rem;
 }
 
@@ -201,7 +199,7 @@ em {
 }
 
 .fineprint {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .hero-headline {
@@ -209,8 +207,7 @@ em {
 }
 
 .project-title {
-  font-size: 3.725rem;
-  font-family: var(--project-title-typeface);
+  font-size: 3rem;
   color: var(--project-title-color);
   margin-bottom: 1rem;
 }
@@ -224,22 +221,30 @@ em {
   color: var(--overlay-description-color);
 }
 
-.caption{
-  padding-top:.6rem;
+.caption {
+  padding-top: 0.6rem;
+  padding-bottom: 0.15rem;
 }
 
-
-.caption-grey{
-  color:#6e6f71;
+.caption-grey {
+  color: #6e6f71;
+  padding-bottom: 1.5rem;
 }
 
+.project-roles {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.role-title {
+  font-weight: 700;
+}
 
 /* Hyperlink Styles */
 
 a:link {
   color: var(--hyperlink-color);
   text-decoration: none;
-  font-size: .9rem;
 }
 
 a:visited {
@@ -264,17 +269,15 @@ a:active {
 }
 
 .navigation-arrow:link {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--accent-color);
-  color: transparent;
+  color: var(--accent-color);
 }
 
-.navigation-arrow:active,
+/* .navigation-arrow:active,
 .navigation-arrow:hover {
   color: var(--accent-color);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--accent-color);
-}
+} */
 
 .colored-link {
   color: var(--hyperlink-alternate-color);
@@ -286,8 +289,6 @@ a:active {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
-
 
 .heart {
   color: var(--heart-color);
@@ -317,8 +318,6 @@ a:active {
   margin-bottom: 1rem;
 }
 
-
-
 /* Hero 
 
 ██   ██ ███████ ██████   ██████  
@@ -330,12 +329,12 @@ a:active {
 */
 
 .hero {
-  min-height: 95vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
 }
 
-.hero-header{
+.hero-header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -347,6 +346,15 @@ a:active {
   top: 0;
 }
 
+.hero-header-not-sticky {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: center;
+}
+
 .branding-navigation {
   display: flex;
   flex-direction: row;
@@ -355,7 +363,7 @@ a:active {
 }
 
 .logo {
-  width:5.5rem;
+  width: 6.5rem;
 }
 
 .hero-headline-wrapper {
@@ -377,10 +385,9 @@ a:active {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  border-bottom: .5px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
   width: 94%;
   margin: 0 auto;
-
 }
 
 .hero-footer-navigation {
@@ -389,9 +396,6 @@ a:active {
   justify-content: space-between;
   padding-bottom: 1rem;
 }
-
-
-
 
 /* Work Page Layout
 
@@ -408,9 +412,11 @@ a:active {
 }
 
 /* Padding around work grid and project page */
-.portfolio,
-.project-wrapper {
-  padding: 1rem;
+.portfolio {
+  padding-top: 1rem;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
 }
 
 /* Defining the work page grid */
@@ -421,7 +427,7 @@ a:active {
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
-.work-page-grid-item {
+.overlay-wrapper {
   width: 100%;
   height: auto;
   position: relative;
@@ -444,17 +450,14 @@ a:active {
   align-items: center;
   flex-direction: column;
   padding: 1em;
-  background-color: var(--overlay-color);
-  transition: opacity .3s, visibility .3s;
+  background-color: white;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
-.work-page-grid-item:hover .overlay {
+.overlay-wrapper:hover .overlay {
   visibility: visible;
-  opacity: .8;
+  opacity: 0.4;
 }
-
-
-
 
 /* 
 
@@ -507,29 +510,22 @@ a:active {
 
 .global-footer {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   min-height: 20vh;
   background: var(--background-color-footer);
-  padding-top: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
   border-top: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
   width: 95%;
   margin: 0 auto;
+  margin-bottom: 4rem;
 }
-
-.footer-item-2 {
-  text-align: right;
-}
-
-.footer-item-3 {
-  align-self: flex-end;
-}
-
 
 .awards-list {
   margin-bottom: 2rem;
 }
-
 
 /* Project Page 
 
@@ -542,6 +538,8 @@ a:active {
 */
 
 .project-wrapper {
+  width: 95%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -554,7 +552,6 @@ a:active {
   display: flex;
   flex-direction: column;
   color: var(--project-sidebar-text-color);
-  background: var(--project-sidebar-background-color);
 }
 
 .project-navigation {
@@ -591,8 +588,9 @@ a:active {
 
 .project-text {
   width: 100%;
-  font-size: 3.25rem;
-  padding: 3rem;
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* Main Project Image Area */
@@ -601,10 +599,6 @@ a:active {
   width: 100%;
   padding: 1rem;
 }
-
-
-
-
 
 /* 
 
@@ -619,20 +613,23 @@ a:active {
 .holding-page-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto;
   place-items: center;
   text-align: center;
   width: 100%;
   min-height: 100vh;
 }
 
+.holding-page-inner-container {
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+}
 .holding-page-animation {
-  margin-bottom: 1rem;
-  padding: 40% 40%;
+  width: 7rem;
 }
 
 .holding-page-title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--holding-page-title-color);
 }
 
@@ -644,7 +641,7 @@ a:active {
 }
 
 .holding-page-copyright {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: var(--holding-page-footer-color);
   margin-bottom: 0;
 }
@@ -662,7 +659,6 @@ a:active {
   padding: 3rem;
 }
 
-
 /*
 ███████ ██████  ██████   ██████  ██████  
 ██      ██   ██ ██   ██ ██    ██ ██   ██ 
@@ -676,7 +672,8 @@ a:active {
   place-items: center;
 }
 
-.error-page-wrapper {}
+.error-page-wrapper {
+}
 
 .error-page-inner-container {
   text-align: center;
@@ -700,7 +697,8 @@ a:active {
   place-items: center;
 }
 
-.play-page-wrapper {}
+.play-page-wrapper {
+}
 
 .play-page-inner-container {
   text-align: center;
@@ -710,7 +708,6 @@ a:active {
   color: var(--accent-color);
 }
 
-
 /*
 ███████ ██   ██ ██████  ███████ ██████  ██ ███    ███ ███████ ███    ██ ████████ ███████ 
 ██       ██ ██  ██   ██ ██      ██   ██ ██ ████  ████ ██      ████   ██    ██    ██      
@@ -718,7 +715,6 @@ a:active {
 ██       ██ ██  ██      ██      ██   ██ ██ ██  ██  ██ ██      ██  ██ ██    ██         ██ 
 ███████ ██   ██ ██      ███████ ██   ██ ██ ██      ██ ███████ ██   ████    ██    ███████ 
 */
-
 
 .experiments-page {
   display: grid;
@@ -763,7 +759,8 @@ a:active {
   text-align: center;
 }
 
-.sub-navigation-item {}
+.sub-navigation-item {
+}
 
 a.sub-navigation-link {
   border: 1px solid var(--accent-color);
@@ -816,7 +813,6 @@ a.sub-navigation-link:hover {
   }
 }
 
-
 /*
 
 ███    ███ ███████ ██████  ██  █████       ██████  ██    ██ ███████ ██████  ██ ███████ ███████ 
@@ -827,21 +823,30 @@ a.sub-navigation-link:hover {
 
 */
 
-
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .hero-headline-wrapper {
+    max-height: 100vh;
+  }
+  .logo {
+    width: 7rem;
+  }
+}
 
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
+  .hero-headline-wrapper {
+    max-height: 100vh;
+  }
 
   .holding-page-title {
     font-size: 2rem;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   h2 {
@@ -851,17 +856,20 @@ a.sub-navigation-link:hover {
   h3 {
     font-size: 1.625rem;
   }
-  
+
   h6 {
     font-size: 1rem;
   }
 
-  a:link {
-    font-size: 1.2rem;
+  .project-text {
+    width: 60%;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .logo {
-    width: 7rem;
+    width: 9rem;
   }
 
   .hero {
@@ -872,18 +880,22 @@ a.sub-navigation-link:hover {
     padding: 8rem 2rem;
   }
 
+  .holding-page-animation {
+    width: 10rem;
+  }
+
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 1rem;
   }
 
   /* Grayscale filter with full-colour on hover and tap */
-  .work-page-grid-item a.grayscale img {
+  .overlay-wrapper a.grayscale img {
     filter: grayscale(100);
   }
 
-  .work-page-grid-item>a.grayscale:active img,
-  .work-page-grid-item>a.grayscale:hover img {
+  .overlay-wrapper > a.grayscale:active img,
+  .overlay-wrapper > a.grayscale:hover img {
     filter: grayscale(0);
   }
 
@@ -893,7 +905,6 @@ a.sub-navigation-link:hover {
   }
 
   .global-footer {
-    padding: 4rem 4rem 0 4rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -922,6 +933,10 @@ a.sub-navigation-link:hover {
     grid-column: 3 / 4;
   }
 
+  .global-footer {
+    padding-bottom: 3rem;
+  }
+
   .footer-item-3 {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
@@ -940,26 +955,19 @@ a.sub-navigation-link:hover {
     text-align: center;
     align-self: end;
   }
-   .hero-headline-wrapper{
+  .hero-headline-wrapper {
     padding: 18%;
   }
 
   /* Padding around work grid and project page */
 
-  .caption{
-    padding-top:.85rem;
-  }
-  
-  .portfolio,
-  .project-wrapper {
-    width: 95%;
-    margin: 0 auto;
+  .caption {
+    padding-top: 0.85rem;
   }
 
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
     flex-direction: row;
-
   }
 
   /* Sidebar on Large Devices */
@@ -995,29 +1003,22 @@ a.sub-navigation-link:hover {
   }
 
   .holding-page-animation {
-    padding: 42% 42%;
+    /* padding: 42% 42%; */
+    background: lightblue;
   }
-
-
 }
 
-
 /* Only add styles below to make very minor adjustments for extra or extra-extra large devices */
-
 
 /* X-Large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {
-
-
   .logo {
     width: 9rem;
   }
-
-
-
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+}
