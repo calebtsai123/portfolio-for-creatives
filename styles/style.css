@@ -873,11 +873,11 @@ a.sub-navigation-link:hover {
   }
 
   .hero {
-    min-height: 100vh;
+    min-height: 95vh;
   }
 
   .hero-headline-wrapper {
-    padding: 8rem 2rem;
+    padding: 5rem 2rem;
   }
 
   .holding-page-animation {
@@ -1004,7 +1004,6 @@ a.sub-navigation-link:hover {
 
   .holding-page-animation {
     /* padding: 42% 42%; */
-    background: lightblue;
   }
 }
 
