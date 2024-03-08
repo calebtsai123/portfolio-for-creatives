@@ -846,7 +846,7 @@ a.sub-navigation-link:hover {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   h2 {
@@ -873,7 +873,7 @@ a.sub-navigation-link:hover {
   }
 
   .hero {
-    min-height: 95vh;
+    min-height: 100vh;
   }
 
   .hero-headline-wrapper {
@@ -1003,7 +1003,7 @@ a.sub-navigation-link:hover {
   }
 
   .holding-page-animation {
-    /* padding: 42% 42%; */
+    /* padding: 42% 42%; */s
   }
 }
 
